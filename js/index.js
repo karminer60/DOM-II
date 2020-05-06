@@ -121,7 +121,8 @@ document.addEventListener("keydown", blue)
 
 
 
-const navClass = document.getElementsByTagName('a')
+const navClass = document.getElementsByClassName('nav')
+const navPart = navClass[0];
 const navs = document.getElementsByTagName('a')
 const oneNav = navs[0];
 
@@ -129,7 +130,7 @@ oneNav.addEventListener("click", function(event){
     event.preventDefault()
   });
 
-navClass.addEventListener('scroll', function(event){
+navPart.addEventListener('scroll', function(event){
     event.stopPropagation();
    
 })
