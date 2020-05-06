@@ -10,7 +10,7 @@ const headingIntro = get('.intro h2')
 
   
 
-  function launch(event) {
+  function greenHeadingIntro(event) {
     
     headingIntro.style.color = 'green';
 
@@ -21,7 +21,7 @@ const headingIntro = get('.intro h2')
     
     'dblclick',
     
-    launch,
+    greenHeadingIntro,
   ) 
 
   function redHeadingIntro(event) {
