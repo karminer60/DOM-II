@@ -102,21 +102,33 @@ function pink(event) {
     
     logo.style.color = 'pink';
 
-    function blue(event) {
     
-        logo.style.color= 'blue';
-    
-
-        event.stopPropagation()
-      }
-
   }
+
+function blue(event) {
+    
+    logo.style.color= 'blue';
+
+
+    event.stopPropagation()
+}
+
+
+
+
+
+
 
 
 
 document.addEventListener("scroll", pink )
 
 document.addEventListener("keydown", blue)
+
+logo.addEventListener('scroll', function(event){
+    event.stopPropagation();
+    
+})
 
 const nav = get('nav');
 
