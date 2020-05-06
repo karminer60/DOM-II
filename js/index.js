@@ -24,3 +24,17 @@ const headingIntro = get('.intro h2')
     launch,
   ) 
 
+  function exitLaunch(event) {
+    
+    headingIntro.style.color = 'red';
+
+  }
+
+  headingIntro.addEventListener(
+    
+    'mouseover',
+    
+    exitLaunch,
+  ) 
+
+
