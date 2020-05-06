@@ -59,3 +59,44 @@ const headingIntro = get('.intro h2')
 }
 
 document.addEventListener("keyup", changeThirdSignUp )
+
+const imgTop = get('.intro img');
+
+function opacityChange(event) {
+    
+    imgTop.style.opacity = .5;
+
+  }
+
+document.addEventListener("mouseenter", opacityChange)
+
+function opacityNormal(event) {
+    
+    imgTop.style.opacity = 1;
+
+  }
+
+document.addEventListener("mouseleave", opacityNormal)
+
+const imgCenter1 = get(".img-content img")
+
+function transparent(event) {
+    
+    imgCenter1.style.opacity = 0;
+
+  }
+
+document.addEventListener("mouseover", transparent)
+
+function opacityNormalCenter(event) {
+    
+    imgCenter1.style.opacity = 1;
+
+  }
+
+document.addEventListener("mouseout", opacityNormalCenter )
+
+
+
+
+
