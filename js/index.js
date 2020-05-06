@@ -119,22 +119,21 @@ document.addEventListener("scroll", pink )
 
 document.addEventListener("keydown", blue)
 
-logo.addEventListener('click', function(event){
+
+
+const navClass = document.getElementsByTagName('a')
+const navs = document.getElementsByTagName('a')
+const oneNav = navs[0];
+
+oneNav.addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
+navClass.addEventListener('scroll', function(event){
     event.stopPropagation();
-    console.log('stop propagation');
+   
 })
 
-const nav = get('nav');
-
-function preventDefault(event) {
-    
-    nav.preventDefault();
-
-
-    
-  }
-
-  document.addEventListener("scroll", preventDefault)
 
 
 
