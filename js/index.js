@@ -115,19 +115,13 @@ function blue(event) {
 
 
 
-
-
-
-
-
-
 document.addEventListener("scroll", pink )
 
 document.addEventListener("keydown", blue)
 
-logo.addEventListener('scroll', function(event){
+logo.addEventListener('click', function(event){
     event.stopPropagation();
-    
+    console.log('stop propagation');
 })
 
 const nav = get('nav');
