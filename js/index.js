@@ -45,7 +45,7 @@ const headingIntro = get('.intro h2')
 
   }
 
-  document.addEventListener("keydown", changeFirstSignUp); 
+  document.addEventListener("click", changeFirstSignUp); 
 
 
   function changeSecondSignUp(event) {
@@ -96,7 +96,23 @@ function opacityNormalCenter(event) {
 
 document.addEventListener("mouseout", opacityNormalCenter )
 
+const logo = get(".logo-heading")
 
+function pink(event) {
+    
+    logo.style.color = 'pink';
+
+  }
+
+function blue(event) {
+    
+    logo.style.color= 'blue';
+
+  }
+
+  document.addEventListener("scroll", pink )
+
+  document.addEventListener("keydown", blue)
 
 
 
